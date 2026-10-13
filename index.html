@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АлыпСат — Интернет базар</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🛍️ АлыпСат</h1>
+    <p>Кыргызстандын интернет базары</p>
+</header>
+
+<nav>
+    <a href="#home">Башкы бет</a>
+    <a href="#products">Товарлар</a>
+    <a href="#add-product">Товар сатуу</a>
+</nav>
+
+<main id="home">
+
+    <section class="welcome">
+        <h2>Кош келиңиз!</h2>
+        <p>Керектүү буюмуңузду табыңыз же өзүңүздүн буюмуңузду сатыңыз.</p>
+
+        <div class="search">
+            <input id="searchInput" type="text" placeholder="Товар издөө...">
+            <button id="searchButton">Издөө</button>
+        </div>
+    </section>
+
+    <section id="add-product">
+        <h2>➕ Товар жарыялоо</h2>
+
+        <label for="productName">Товардын аты</label>
+        <input id="productName" type="text" placeholder="Мисалы: Телефон">
+
+        <label for="productPrice">Баасы (сом)</label>
+        <input id="productPrice" type="number" min="1" placeholder="Мисалы: 15000">
+
+        <label for="sellerPhone">Телефон номери</label>
+        <input id="sellerPhone" type="tel" placeholder="0700123456">
+
+        <label for="productImage">Товардын сүрөтү</label>
+        <input id="productImage" type="file" accept="image/*">
+
+        <button id="addProductButton">Жарыялоо</button>
+        <p id="formMessage" aria-live="polite"></p>
+    </section>
+
+    <section id="products">
+        <h2>🛒 Сатыктагы товарлар</h2>
+
+        <div id="productList" class="product-list">
+
+            <article class="product">
+                <h3>📱 Телефон</h3>
+                <p>Баасы: 15 000 сом</p>
+                <p>Байланыш: 0700 000 000</p>
+            </article>
+
+            <article class="product">
+                <h3>💻 Ноутбук</h3>
+                <p>Баасы: 25 000 сом</p>
+                <p>Байланыш: 0700 000 001</p>
+            </article>
+
+            <article class="product">
+                <h3>🎧 Кулакчын</h3>
+                <p>Баасы: 800 сом</p>
+                <p>Байланыш: 0700 000 002</p>
+            </article>
+
+        </div>
+
+        <p id="noResults" hidden>Товар табылган жок.</p>
+    </section>
+
+    <section class="about">
+        <h2>Биздин максат</h2>
+        <p>АлыпСат — буюмдарды сатып алууга жана сатууга арналган интернет базар.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 АлыпСат — Интернет базар</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

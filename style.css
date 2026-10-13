@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5fb;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(135deg, #1769ff, #633bdb);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background: white;
+    padding: 17px;
+    text-align: center;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+nav a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    margin: 5px 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1769ff;
+}
+
+main {
+    width: 92%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px #00000008;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1769ff;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 16px;
+    border: 1px solid #ccd3df;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search input {
+    margin: 0;
+    min-width: 0;
+}
+
+input[type="file"] {
+    background: #f8faff;
+}
+
+button {
+    padding: 13px 20px;
+    background: #1769ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d50cc;
+}
+
+.search button {
+    flex-shrink: 0;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 18px;
+}
+
+.product {
+    padding: 20px;
+    border: 1px solid #e0e5ed;
+    border-radius: 12px;
+    background: #fbfcff;
+    overflow-wrap: anywhere;
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    background: #f1f5fb;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.product h3 {
+    color: #1769ff;
+    margin-top: 0;
+}
+
+.product p {
+    line-height: 1.6;
+}
+
+#formMessage {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.about {
+    background: #eaf1ff;
+}
+
+footer {
+    padding: 22px;
+    text-align: center;
+    color: #666;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+}
